@@ -1,0 +1,53 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Math Game</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1, user-scalable = yes">
+    <link rel="stylesheet" href="stylegame.css" type="text/css">
+</head>
+<body>
+<div class="container">
+    <div class="score">
+        Score : <span id="scorecard">0</span>
+    </div>
+    <div id="correct">
+        Correct
+    </div>
+    <div id="wrong">
+        Try again
+    </div>
+    <div id="board1">
+
+    </div>
+    <div class="board2">
+        <p>Click on the correct answer</p>
+    </div>
+    <div class="choice">
+        <div class="box" id="box1" onclick="checkans1(0)"></div>
+        <div class="box" id="box2" onclick="checkans2(1)"></div>
+        <div class="box" id="box3" onclick="checkans3(2)"></div>
+        <div class="box" id="box4" onclick="checkans4(3)"></div>
+    </div>
+    <div id="startreset" onclick="time()">
+      Start Game
+    </div>
+    <div id="timeremaining">
+     Time remaining : <span id="timevalue"></span> sec
+    </div>
+    <div id="gameover">
+        GAME OVER!<br/>
+        YOUR SCORE IS <span id="finalscore">0</span>.
+    </div>
+</div>
+<marquee>
+       <div class="footer">
+   <p> <span id="foot">Geeks Comunity Copyright &copy; 2019-2021 </span>
+        Designed by Prashant Tiwari
+   </p>
+</div>
+</marquee>
+<script src="javascriptgame.js">
+</script>
+</body>
+</html>
